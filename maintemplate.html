@@ -67,7 +67,7 @@
   </div>
   
 
-  <div class="jumbotron " >
+  <div class="jumbotron " id="slide2">
   	<h1> This Just In </h1>
 	  <div class="row">
 		  <div class="col-sm-6">
@@ -111,7 +111,7 @@
 	  	
   </div>
 
-  <div class="jumbotron first">
+  <div class="jumbotron first" id="slide3">
 		  <div class="container">
 		  <p> <div class="gbd"> WHO WE DO</div>
 		  	    <br>
@@ -337,6 +337,21 @@ function scrollFunction() {
   } else {
     document.getElementById("slide").style.visibility = "hidden";
   }
+
+    if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+  	
+    document.getElementById("slide2").style.visibility = "visible";
+  } else {
+    document.getElementById("slide2").style.visibility = "hidden";
+  }
+
+     if (document.body.scrollTop > 1900 || document.documentElement.scrollTop > 1900) {
+  	
+    document.getElementById("slide3").style.visibility = "visible";
+  } else {
+    document.getElementById("slide3").style.visibility = "hidden";
+  }
+
 }
 
 </script>
